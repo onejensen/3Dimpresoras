@@ -11,60 +11,47 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <div><img class="banner" src="images/banner.webp" alt="banner"></div>
+        <img class="banner" src="images/banner.webp" alt="banner">
         <h1>LAS MEJORES IMPRESORAS 3D Y CONSUMIBLES DEL MERCADO</h1>
-        <button id="boton-hamburguesa">
-            <span>&#9776;</span> Menú
-        </button>
-        <nav id="menu">
-            <ul>
-                <li><a href="#">IMPRESORAS</a>
+        <div id="content-container">
+            <button id="boton-hamburguesa">
+                <span>&#9776;</span> Menú
+                <nav id="menu">
                     <ul>
-                        <li><a href="#">FDM</a></li>
-                        <li><a href="#">RESINA</a></li>
+                        <li><a class="main" href="impresoras.html">IMPRESORAS</a>
+                            <ul>
+                                <li><a href="#">FDM</a></li>
+                                <li><a href="#">RESINA</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="main" href="#">CONSUMIBLES</a>
+                            <ul>
+                                <li><a href="#">FILAMENTO</a></li>
+                                <li><a href="#">RESINAS</a></li>
+                                <li><a href="#">LACAS</a></li>
+                                <li><a href="#">LIMPIEZA</a></li>
+                                <li><a href="#">LUBRICANTES</a></li>
+                                <li><a href="#">SEGURIDAD</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="main" href="#">RECAMBIOS</a>
+                            <ul>
+                                <li><a href="#">HOTENDS</a></li>
+                                <li><a href="#">BASES</a></li>
+                                <li><a href="#">MOTORES</a></li>
+                                <li><a href="#">PTFE</a></li>
+                                <li><a href="#">RODAMIENTOS</a></li>
+                                <li><a href="#">ELECTRÓNICA</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="#">CONSUMIBLES</a>
-                    <ul>
-                        <li><a href="#">FILAMENTO</a></li>
-                        <li><a href="#">RESINAS</a></li>
-                        <li><a href="#">LACAS</a></li>
-                        <li><a href="#">LIMPIEZA</a></li>
-                        <li><a href="#">LUBRICANTES</a></li>
-                        <li><a href="#">SEGURIDAD</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">RECAMBIOS</a>
-                    <ul>
-                        <li><a href="#">HOTENDS</a></li>
-                        <li><a href="#">BASES</a></li>
-                        <li><a href="#">MOTORES</a></li>
-                        <li><a href="#">PTFE</a></li>
-                        <li><a href="#">RODAMIENTOS</a></li>
-                        <li><a href="#">ELECTRÓNICA</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+            </button>
+
 
     </header>
 
@@ -102,6 +89,8 @@
             }
         });
     </script>
+
+
 </body>
 <footer>
     <p>&copy TresDeImpresoras 2023</p>
