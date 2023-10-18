@@ -35,7 +35,7 @@ header {
 .banner {
     padding: 1%;
     display: flex;
-    max-width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -76,7 +76,12 @@ p {
 h1 {
     max-width: 100%;
     text-align: center;
+<<<<<<< HEAD
     font-size: 3.0vw;
+=======
+    font-size: 2.6vw;
+    padding: 5px;
+>>>>>>> 35b35198771ac3523db19e16cd4a341c8d24a6b5
 }
 
 h2 {
