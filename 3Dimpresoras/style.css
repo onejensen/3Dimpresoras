@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: block;
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    height: 10%;
+    background-color: #8f8f8f;
+}
+
+.banner {
+    padding: 1%;
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+}
+
+.image {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        display: inline;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        column-count: auto;
+    }
+}
+
+
+img {
+    display: flex;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: justify;
+    max-width: 80%;
+
+}
+
+p {
+    font-size: larger;
+}
+
+.main {
+    font-weight: bolder;
+}
+
+h1 {
+    max-width: 100%;
+    text-align: center;
+    font-size: 3.0vw;
+
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#content-container {
+    position: relative;
+}
+
+#menu {
+    display: none;
+    background-color: #3b3b3b;
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+}
+
+
+#menu ul li {
+    padding: 15px 0;
+}
+
+#menu ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+#boton-hamburguesa {
+    background-color: #8f8f8f;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#menu ul li:hover {
+    background: #bdbdbd29;
+    transition: 600ms;
+}
+
+#menu ul li:hover>ul {
+    opacity: 100%;
+}
+
+#menu ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+
+
+footer p,
+footer a {
+    margin-top: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}

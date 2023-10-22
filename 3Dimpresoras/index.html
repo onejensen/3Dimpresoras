@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Las mejores impresoras 3D</title>
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
+    <meta name="description" content="Aquí encontrarás las mejores impresoras 3D relacion calidad/precio del mercado">
+    <meta name="keywords" content="Impresoras 3D, resina, FDM, 3D printing, filamento, impresoras">
+    <meta charset="UTF-8">
+    <meta property="og:image" content="images/prusamk4.jpeg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+    <header>
+        <img class="banner" src="images/banner.webp" alt="banner">
+        <h1>LAS MEJORES IMPRESORAS 3D Y CONSUMIBLES DEL MERCADO</h1>
+        <div id="content-container">
+            <button id="boton-hamburguesa">
+                <span>&#9776;</span> MENÚ
+                <nav id="menu">
+                    <ul>
+                        <li><a class="main" href="impresoras.html">IMPRESORAS</a>
+                            <ul>
+                                <li><a href="#">FDM</a></li>
+                                <li><a href="#">RESINA</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="main" href="#">CONSUMIBLES</a>
+                            <ul>
+                                <li><a href="#">FILAMENTO</a></li>
+                                <li><a href="#">RESINAS</a></li>
+                                <li><a href="#">LACAS</a></li>
+                                <li><a href="#">LIMPIEZA</a></li>
+                                <li><a href="#">LUBRICANTES</a></li>
+                                <li><a href="#">SEGURIDAD</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="main" href="#">RECAMBIOS</a>
+                            <ul>
+                                <li><a href="#">HOTENDS</a></li>
+                                <li><a href="#">BASES</a></li>
+                                <li><a href="#">MOTORES</a></li>
+                                <li><a href="#">PTFE</a></li>
+                                <li><a href="#">RODAMIENTOS</a></li>
+                                <li><a href="#">ELECTRÓNICA</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </button>
+
+
+    </header>
+
+    <div class="text">
+        <h2>IMPRESORAS 3D</h2>
+        <p>Las <b>impresoras 3D</b> se utilizan en una variedad de aplicaciones, desde prototipado rápido y fabricación
+            personalizada hasta la producción de piezas complejas en la industria aeroespacial y médica. Puedes diseñar
+            tus propios objetos en software de modelado 3D
+            o descargar diseños preexistentes de la web y luego imprimirlos en una impresora 3D.
+            <br>Existen varios tipos de <b>impresoras 3D</b>, cada una con sus propias características y métodos de impresión.
+        </p>
+        <div class="image">
+            <img href="fdm.html" src="images/ImpresoraFDM.webp" title="Impresora de filamento" alt="impresora_FDM"
+                width="300px">
+            <img src="images/Impresora_resina.webp" title="Impresora de resina" alt="impresora_de_resina" width="300px">
+        </div>
+        <p>Las <b>impresoras de filamento</b> o FDM utilizan el método de impresión 3D más sencillo y se basa en tres
+            elementos:
+            Una cama o placa donde se imprime la pieza, una bobina de filamento y un extrusor.
+            El extrusor de la impresora 3D FDM empuja el filamento y lo funde para depositarlo capa por capa sobre la
+            cama de impresión,
+            formando así una pieza en tres dimensiones.</p>
+        <p>A diferencia de las impresoras por filamento, las <b>impresoras de resina</b> utilizan una pantalla ultravioleta para
+            proyectar la
+            luz y funcionan con material líquido.
+            La luz ultravioleta va endureciendo ese material en las zonas adecuadas para ir dándole la forma que
+            queremos.</p>
+    </div>
+    <script>
+        document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+
+
+</body>
+<footer>
+    <p>&copy TresDeImpresoras 2023</p>
+    <a href="mailto:tresdeimpresoras@gmail.com">Contáctanos</a>
+</footer>
+
+</html>
