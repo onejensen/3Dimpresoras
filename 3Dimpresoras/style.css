@@ -33,7 +33,6 @@ header {
 }
 
 .banner {
-    padding: 1%;
     display: flex;
     max-width: 90%;
     margin: auto;
@@ -41,22 +40,24 @@ header {
 
 .image {
     display: flex;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 100%;
+    width: 80%;
     justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
-    img {
-        display: inline;
-        align-items: center;
-        height: auto;
+@media only screen and (max-width: 768px) {
+    .image {
+        margin: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center;
         width: 100%;
-        column-count: auto;
+        
+    
     }
 }
-
 
 img {
     display: flex;
