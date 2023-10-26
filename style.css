@@ -123,7 +123,7 @@ h2 {
     cursor: pointer;
 }
 
-#menu ul li:hover {
+#menu li:hover {
     background: #bdbdbd29;
     transition: 600ms;
 }
