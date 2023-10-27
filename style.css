@@ -1,149 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-        'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 html {
-    background-color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-        'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #1d2652;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 body {
     display: block;
-    width: 100%;
-    margin: 0;
-    min-height: 100vh;
-}
-
-header {
-    height: 10%;
-    background-color: #8f8f8f;
+    justify-content: center;
+    align-items: center;
+    background-color: #1CD3F8;
 }
 
 .banner {
-    padding: 1%;
-    display: flex;
-    width: 90%;
-    margin: auto;
+    width: 70%;
+    top: 0;
+    left: 0;
+    transition: all .15s linear 0s;
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #FFE800;
+
+    text-transform: uppercase;
+    color: #1d2652;
+    font-family: arial;
+    letter-spacing: 1px;
+
+    box-shadow: -6px 6px 0 #1d2652;
+    text-decoration: none;
+
+    &:hover {
+        top: 3px;
+        left: -3px;
+        box-shadow: -3px 3px 0;
+
+        &::after {
+            top: 1px;
+            left: -2px;
+            width: 4px;
+            height: 4px;
+        }
+
+        &::before {
+            bottom: -2px;
+            right: 1px;
+            width: 4px;
+            height: 4px;
+        }
+    }
+
+    &::after {
+        transition: all .15s linear 0s;
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: -4px;
+        width: 8px;
+        height: 8px;
+        transform: rotate(45deg);
+        z-index: -1;
+
+    }
+
+    &::before {
+        transition: all .15s linear 0s;
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        right: 2px;
+        width: 8px;
+        height: 8px;
+        background-color: #1d2652;
+        transform: rotate(45deg);
+        z-index: -1;
+    }
 }
 
-.image {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    justify-content: center;
+a.banner {
+    position: center;
 }
 
-img {
-    display: block;
-    margin: auto;
-    margin-right: 5px;
-    margin-left: 5px;
-    border-radius: 10px;
-}
+a:active.btn {
+    top: 6px;
+    left: -6px;
+    box-shadow: #1d2652;
 
-.text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    text-align: justify;
-    max-width: 600px;
+    &:before {
+        bottom: 1px;
+        right: 1px;
+    }
 
-}
-
-p {
-    font-size: larger;
-}
-
-.main {
-    font-weight: bolder;
+    &:after {
+        top: 1px;
+        left: 1px;
+    }
 }
 
 h1 {
-    max-width: 100%;
-    text-align: center;
-    font-size: 3.0vw;
-
+    font-size: 2.4vw;
+    margin-top: 10px;
+    color: #1d2652;
 }
 
-h2 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#content-container {
-    position: relative;
-}
-
-#menu {
-    display: none;
-    background-color: #3b3b3b;
-    width: 50%;
-    max-width: 500px;
-    text-align: left;
-    position: absolute;
-    z-index: 1000;
-    top: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    left: 0;
-}
-
-
-#menu ul li {
-    padding: 15px 0;
-}
-
-#menu ul li a {
-    color: #fff;
-    font-size: 18px;
-}
-
-#boton-hamburguesa {
-    background-color: #8f8f8f;
-    color: #000000;
-    font-size: 20px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-#menu li:hover {
-    background: #bdbdbd29;
-    transition: 600ms;
-}
-
-#menu ul li:hover>ul {
-    opacity: 100%;
-}
-
-#menu ul ul a {
-    line-height: 120%;
-    padding: 10px 15px;
-}
-
-
-
-footer p,
-footer a {
-    margin-top: 20px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size: 16px !important;
+        line-height: 100%;
+        margin-top: 10px;
+    }
 }
