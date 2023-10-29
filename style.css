@@ -98,10 +98,27 @@ a:active.btn {
     }
 }
 
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: justify;
+    width: 60%;
+}
+
 h1 {
     font-size: 2.0vw;
     margin-top: 10px;
     color: #1d2652;
+}
+
+img {
+    display: block;
+    flex-direction: row;
+    width: 300px;
+    margin: auto;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -113,5 +130,19 @@ h1 {
 
     .banner {
         width: 90%;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: justify;
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+        justify-items: center;
     }
 }
