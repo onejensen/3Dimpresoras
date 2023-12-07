@@ -14,14 +14,16 @@ body {
 }
 
 .banner {
-    width: 65%;
+    margin: auto;
+    width: 80%;
     top: 0;
     left: 0;
     transition: all .15s linear 0s;
     position: relative;
-    display: inline-block;
+    display: inline;
     padding: 15px 25px;
     background-color: #FFE800;
+    border-radius: 10px;
 
     text-transform: uppercase;
     color: #1d2652;
@@ -30,6 +32,7 @@ body {
 
     box-shadow: -6px 6px 0 #1d2652;
     text-decoration: none;
+}
 
     &:hover {
         top: 3px;
@@ -76,7 +79,7 @@ body {
         transform: rotate(45deg);
         z-index: -1;
     }
-}
+
 
 a.banner {
     position: center;
@@ -104,7 +107,7 @@ a:active.btn {
     justify-content: center;
     margin: auto;
     text-align: justify;
-    width: 60%;
+    width: 80%;
 }
 
 h1 {
@@ -114,12 +117,35 @@ h1 {
 }
 
 img {
-    display: block;
-    flex-direction: row;
-    width: 300px;
+    width: 250px;
     margin: auto;
 
 }
+
+.button {
+    border-radius: 10px;
+
+}
+
+.cj_btn {
+    display: flex;
+}
+
+.boton {
+    margin: auto;
+    width: 300px;
+    top: 0;
+    left: 0;
+    transition: all .15s linear 0s;
+    padding: 15px 15px;
+    background-color: #FFE800;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #1d2652;
+    font-family: arial;
+    letter-spacing: 1px;
+    box-shadow: -6px 6px 0 #1d2652;
+    text-decoration: none;
 
 @media screen and (max-width: 768px) {
     h1 {
@@ -144,5 +170,9 @@ img {
     img {
         width: 100%;
         justify-items: center;
+    }
+
+    .cj_btn{
+        flex-direction: column;
     }
 }
