@@ -70,7 +70,7 @@ img {
 .cj_btn {
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .cj_img {
@@ -104,10 +104,16 @@ footer {
     color: $brown;
     font-family: arial;
     letter-spacing: 1px;
-    box-shadow: -6px 6px 4px #000000;
+    box-shadow: -2px 2px 4px #000000;
     text-decoration: none;
-}
 
+
+&:hover {
+    top: 0px;
+    left: -0px;
+    box-shadow: -8px 8px 6px #00000096;
+}
+}
 a.banner {
     position: relative;
 }
@@ -130,19 +136,26 @@ a:active.banner {
 
 /*Final del efecto botones*/
 .btn {
+    width: 350px;
     top: 0;
     left: 0;
     transition: all 0.15s linear 0s;
     position: relative;
     display: inline-block;
-    padding: 15px 25px;
+    padding: 10px 10px;
     background-color: #FFE800;
     border-radius: 10px;
     text-transform: uppercase;
     font-family: arial;
     letter-spacing: 1px;
-    box-shadow: -6px 6px 4px #000000;
+    box-shadow: -2px 2px 4px #000000;
     text-decoration: none;
+
+    &:hover {
+        top: 0px;
+        left: -0px;
+        box-shadow: -8px 8px 6px #00000096;
+    }
 }
 
     &::after {
@@ -213,7 +226,7 @@ a:active.btn {
     }
 
     .btn {
-        width: 250px;
+        width: 350px;
     }
 
     img {
@@ -230,7 +243,7 @@ a:active.btn {
     .cj_img {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     button {
