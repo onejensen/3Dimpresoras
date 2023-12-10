@@ -15,14 +15,13 @@ body {
 
 .caja {
     margin: auto;
-    max-width: 600px;
-    background-color: #1CD3F8;
+    max-width: 800px;
+    background-color: #45e0ff;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: inset 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-        inset -6px -6px 10px -1px rgba(255, 255, 255, 0.6);
     margin-bottom: 20px;
     margin-top: 20px;
+    box-shadow: -3px 3px 4px  #00000096;
 
 }
 
@@ -50,6 +49,7 @@ h1 {
 img {
     width: 100%;
     margin: auto;
+    
 
 }
 
@@ -59,6 +59,7 @@ img {
     border-radius: 10px;
     width: 250px;
     align-items: center;
+    
 }
 
 .button {
@@ -72,12 +73,24 @@ img {
     gap: 4rem;
 }
 
+.cj_img {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+p,h1,h2,h3,h4,text,footer {
+    text-decoration: none;
+    cursor: default;
+}
+
 footer {
     align-items: center;
 }
 
 /*Principio del efecto botones*/
 .banner {
+    margin-bottom: 10px;
     width: 50%;
     top: 0;
     left: 0;
@@ -85,61 +98,14 @@ footer {
     position: relative;
     display: inline-block;
     padding: 15px 25px;
-    background-color:#FFE800;
+    background-color: #FFE800;
     border-radius: 10px;
     text-transform: uppercase;
     color: $brown;
     font-family: arial;
     letter-spacing: 1px;
-    box-shadow: -6px 6px 0 #000000;
+    box-shadow: -6px 6px 4px #000000;
     text-decoration: none;
-
-    &:hover {
-        top: 1.5px;
-        left: -1.5px;
-        box-shadow: -3px 3px 0 $brown;
-        
-
-        &::after {
-            top: 0px;
-            left: -1px;
-            width: $angle-o;
-            height: $angle-o;
-        }
-
-        &::before {
-            bottom: 0px;
-            right: -1px;
-            width: $angle-o;
-            height: $angle-o;
-        }
-    }
-
-    &::after {
-        transition: all 0.15s linear 0s;
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: -4px;
-        width: $angle;
-        height: $angle;
-        background-color: $brown;
-        transform: rotate(45deg);
-        z-index: -1;
-    }
-
-    &::before {
-        transition: all 0.15s linear 0s;
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        right: 2px;
-        width: $angle;
-        height: $angle;
-        background-color: $brown;
-        transform: rotate(45deg);
-        z-index: -1;
-    }
 }
 
 a.banner {
@@ -161,6 +127,7 @@ a:active.banner {
         left: 1px;
     }
 }
+
 /*Final del efecto botones*/
 .btn {
     top: 0;
@@ -169,37 +136,17 @@ a:active.banner {
     position: relative;
     display: inline-block;
     padding: 15px 25px;
-    background-color:#FFE800;
+    background-color: #FFE800;
     border-radius: 10px;
     text-transform: uppercase;
     font-family: arial;
     letter-spacing: 1px;
-    box-shadow: -6px 6px 0 #000000;
+    box-shadow: -6px 6px 4px #000000;
     text-decoration: none;
-
-    &:hover {
-        top: 1.5px;
-        left: -1.5px;
-        box-shadow: -3px 3px 0 $brown;
-        
-
-        &::after {
-            top: 0px;
-            left: -1px;
-            width: $angle-o;
-            height: $angle-o;
-        }
-
-        &::before {
-            bottom: 0px;
-            right: -1px;
-            width: $angle-o;
-            height: $angle-o;
-        }
-    }
+}
 
     &::after {
-        transition: all 0.15s linear 0s;
+        transition: all 0.10s linear 0s;
         content: "";
         position: absolute;
         top: 2px;
@@ -212,7 +159,7 @@ a:active.banner {
     }
 
     &::before {
-        transition: all 0.15s linear 0s;
+        transition: all 0.10s linear 0s;
         content: "";
         position: absolute;
         bottom: -4px;
@@ -280,6 +227,12 @@ a:active.btn {
         gap: 2rem;
     }
 
+    .cj_img {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
     button {
         width: 300px;
         transition: all .15s linear 0s;
@@ -294,4 +247,14 @@ a:active.btn {
         cursor: pointer;
     }
 
-}
+    .caja {
+        margin: auto;
+        max-width: 600px;
+        background-color: #45e0ff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: -2px 2px 0 #00000096;
+
+    }
