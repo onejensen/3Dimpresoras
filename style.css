@@ -41,7 +41,7 @@ p {
 }
 
 h1 {
-    font-size: 1.55vw;
+    font-size: 1.5em;
     margin-top: 10px;
     color: #1d2652;
 }
@@ -70,7 +70,7 @@ img {
 .cj_btn {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 .cj_img {
@@ -91,7 +91,8 @@ footer {
 /*Principio del efecto botones*/
 .banner {
     margin-bottom: 10px;
-    width: 50%;
+    
+    width: 900px;
     top: 0;
     left: 0;
     transition: all 0.15s linear 0s;
@@ -213,7 +214,7 @@ a:active.btn {
     }
 
     .banner {
-        width: 90%;
+        width: 90% !important;
     }
 
     .text {
