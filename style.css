@@ -21,7 +21,7 @@ body {
     padding: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
-    box-shadow: -3px 3px 4px  #00000096;
+    box-shadow: -3px 3px 4px #00000096;
 
 }
 
@@ -49,17 +49,17 @@ h1 {
 img {
     width: 100%;
     margin: auto;
-    
+
 
 }
 
 .image {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     display: flex;
     border-radius: 10px;
-    width: 250px;
+    width: 350px;
     align-items: center;
-    
+
 }
 
 .button {
@@ -79,7 +79,7 @@ img {
     gap: 2rem;
 }
 
-p,h1,h2,h3,h4,text,footer {
+p, h1, h2, h3, h4, text, footer {
     text-decoration: none;
     cursor: default;
 }
@@ -108,12 +108,13 @@ footer {
     text-decoration: none;
 
 
-&:hover {
-    top: 0px;
-    left: -0px;
-    box-shadow: -8px 8px 6px #00000096;
+    &:hover {
+        top: 0px;
+        left: -0px;
+        box-shadow: -8px 8px 6px #00000096;
+    }
 }
-}
+
 a.banner {
     position: relative;
 }
@@ -137,8 +138,6 @@ a:active.banner {
 /*Final del efecto botones*/
 .btn {
     width: 350px;
-    top: 0;
-    left: 0;
     transition: all 0.15s linear 0s;
     position: relative;
     display: inline-block;
@@ -158,31 +157,31 @@ a:active.banner {
     }
 }
 
-    &::after {
-        transition: all 0.10s linear 0s;
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: -4px;
-        width: $angle;
-        height: $angle;
-        background-color: $brown;
-        transform: rotate(45deg);
-        z-index: -1;
-    }
+&::after {
+    transition: all 0.10s linear 0s;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -4px;
+    width: $angle;
+    height: $angle;
+    background-color: $brown;
+    transform: rotate(45deg);
+    z-index: -1;
+}
 
-    &::before {
-        transition: all 0.10s linear 0s;
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        right: 2px;
-        width: $angle;
-        height: $angle;
-        background-color: $brown;
-        transform: rotate(45deg);
-        z-index: -1;
-    }
+&::before {
+    transition: all 0.10s linear 0s;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 2px;
+    width: $angle;
+    height: $angle;
+    background-color: $brown;
+    transform: rotate(45deg);
+    z-index: -1;
+}
 }
 
 a.btn {
@@ -264,10 +263,10 @@ a:active.btn {
         margin: auto;
         max-width: 600px;
         background-color: #45e0ff;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    box-shadow: -2px 2px 0 #00000096;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        box-shadow: -2px 2px 0 #00000096;
 
     }
