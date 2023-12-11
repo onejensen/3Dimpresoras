@@ -9,7 +9,6 @@ html {
     text-align: center;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color: #1d2652;
-    text-transform: ;
     letter-spacing: 1px;
 }
 
@@ -38,7 +37,7 @@ body {
 
 p {
     
-    text-align: justify;
+    text-align: center;
     margin: 20px;
 
 }
@@ -52,7 +51,7 @@ p {
     width: 80%;
 }
 
-h1 {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'white rabbit';
     font-size: 1.7em;
     margin-top: 10px;
@@ -92,6 +91,11 @@ img {
 .button {
     border-radius: 10px;
 
+}
+
+#precio {
+    font-family: 'white rabbit';
+    font-size: xx-large;
 }
 
 .cj_btn {
@@ -167,7 +171,7 @@ a:active.banner {
     }
 }
 
-/*Final del efecto botones*/
+/*Final del efecto BANNER*/
 .btn {
     width: 350px;
     transition: all 0.15s linear 0s;
@@ -228,6 +232,50 @@ a:active.btn {
         left: 1px;
     }
 }
+/*FINAL EFECTO BOTONES*/
+.product {
+    margin-bottom: 10px;
+    width: 800px;
+    top: 0;
+    left: 0;
+    transition: all 0.15s linear 0s;
+    display: flex;
+    padding: 15px 15px;
+    background-color: #FFE800;
+    border-radius: 10px;
+    text-size-adjust: 180px;
+    font-family: arial;
+    letter-spacing: 0.5px;
+    box-shadow: -2px 2px 6px #000000;
+    text-decoration: none;
+
+
+    &:hover {
+        top: 0px;
+        left: -0px;
+        box-shadow: -8px 8px 6px #00000096;
+    }
+}
+
+a.product {
+    position: relative;
+}
+
+a:active.product {
+    top: 6px;
+    left: -6px;
+    box-shadow: none;
+
+    &:before {
+        bottom: 1px;
+        right: 1px;
+    }
+
+    &:after {
+        top: 1px;
+        left: 1px;
+    }
+}
 
 @media screen and (max-width: 900px) {
     h1 {
@@ -247,6 +295,11 @@ a:active.btn {
         margin: auto;
         text-align: center;
         width: 90%;
+    }
+
+    .product {
+        width: 88%;
+        display: block;
     }
 
     .btn {
