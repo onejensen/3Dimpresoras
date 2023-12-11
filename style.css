@@ -1,9 +1,20 @@
+@font-face {
+    font-family: 'White Rabbit';
+    src: url('fonts/whitrabt.woff') format("woff");
+    font-weight: normal;
+    font-style: normal;
+ }
+
 html {
     text-align: center;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color: #1d2652;
     text-transform: ;
     letter-spacing: 1px;
+}
+
+header{
+    margin-top: 20px;
 }
 
 body {
@@ -26,6 +37,7 @@ body {
 }
 
 p {
+    
     text-align: justify;
     margin: 20px;
 
@@ -41,7 +53,8 @@ p {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-family: 'white rabbit';
+    font-size: 1.7em;
     margin-top: 10px;
     color: #1d2652;
 }
@@ -49,8 +62,11 @@ h1 {
 img {
     width: 100%;
     margin: auto;
+    border-radius: 10px;
+}
 
-
+.imgg{
+    width: 95%;
 }
 
 .image {
@@ -63,6 +79,7 @@ img {
 }
 
 .link {
+    
     margin-top: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -90,6 +107,7 @@ img {
 }
 
 a {
+    font-family: 'white rabbit';
     text-decoration: none;
 }
 
@@ -100,6 +118,7 @@ p, h1, h2, h3, h4, text, footer {
 
 footer {
     align-items: center;
+    margin-bottom: 20px;
 }
 
 /*Principio del efecto botones*/
@@ -115,10 +134,9 @@ footer {
     background-color: #FFE800;
     border-radius: 10px;
     text-transform: uppercase;
-    color: $brown;
     font-family: arial;
     letter-spacing: 1px;
-    box-shadow: -2px 2px 4px #000000;
+    box-shadow: -2px 2px 6px #000000;
     text-decoration: none;
 
 
@@ -161,7 +179,7 @@ a:active.banner {
     text-transform: uppercase;
     font-family: arial;
     letter-spacing: 1px;
-    box-shadow: -2px 2px 4px #000000;
+    box-shadow: -2px 2px 6px #000000;
     text-decoration: none;
 
     &:hover {
@@ -177,9 +195,6 @@ a:active.banner {
     position: absolute;
     top: 2px;
     left: -4px;
-    width: $angle;
-    height: $angle;
-    background-color: $brown;
     transform: rotate(45deg);
     z-index: -1;
 }
@@ -190,12 +205,8 @@ a:active.banner {
     position: absolute;
     bottom: -4px;
     right: 2px;
-    width: $angle;
-    height: $angle;
-    background-color: $brown;
     transform: rotate(45deg);
     z-index: -1;
-}
 }
 
 a.btn {
@@ -220,7 +231,7 @@ a:active.btn {
 
 @media screen and (max-width: 900px) {
     h1 {
-        font-size: 2.5vw !important;
+        font-size: 2.9vw !important;
         line-height: 100%;
         margin-top: 10px;
     }
@@ -243,6 +254,7 @@ a:active.btn {
     }
 
     img {
+        border-radius: 10px;
         width: 100%;
         justify-items: center;
     }
@@ -291,3 +303,4 @@ a:active.btn {
         box-shadow: -2px 2px 0 #00000096;
 
     }
+}
