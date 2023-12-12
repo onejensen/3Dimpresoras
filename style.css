@@ -75,7 +75,7 @@ h1,h2,h4,h5,h6 {
 h3 {
     font-family: 'white rabbit';
     font-size: 1.4em;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 img {
@@ -195,6 +195,7 @@ a:active.banner {
 /*Final del efecto BANNER*/
 .btn {
     width: 350px;
+    height: 350px;
     transition: all 0.15s linear 0s;
     position: relative;
     display: flex;
@@ -202,11 +203,7 @@ a:active.banner {
     padding: 10px 10px;
     background-color: #FFE800;
     border-radius: 10px;
-    text-transform: uppercase;
-    font-family: arial;
-    letter-spacing: 1px;
     box-shadow: -2px 2px 6px #000000;
-    text-decoration: none;
 
     &:hover {
         top: 0px;
@@ -256,10 +253,9 @@ a:active.btn {
 }
 /*FINAL EFECTO BOTONES*/
 .product {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 300px;
-    top: 0;
-    left: 0;
+    height: 33px;
     transition: all 0.15s linear 0s;
     display: inline-block;
     padding: 10px 10px;
@@ -329,6 +325,7 @@ a:active.product {
 
     .btn {
         width: 320px;
+        height: 320px;
         margin: auto;
         }
 
