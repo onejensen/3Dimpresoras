@@ -302,6 +302,7 @@ a:active.product {
 
     .banner {
         width: 88%;
+        padding: auto;
     }
 
     .text {
