@@ -258,11 +258,9 @@ a:active.btn {
     height: 33px;
     transition: all 0.15s linear 0s;
     display: inline-block;
-    padding: 10px 10px;
+    padding: 5px 5px;
     background-color: #FFE800;
     border-radius: 10px;
-    text-size-adjust: 180px;
-    font-family: arial;
     box-shadow: -2px 2px 6px #000000;
 
 
@@ -293,9 +291,10 @@ a:active.product {
     }
 }
 
-.ToTop {
+#ToTop {
     font-size: x-large;
 }
+
 
 @media screen and (max-width: 800px) {
     h1 {

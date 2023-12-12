@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "../Portfolio"
+			"path": "."
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Miswebos"
+		"liveServer.settings.multiRootWorkspaceName": "3Dimpresoras"
 	}
 }
