@@ -293,6 +293,10 @@ a:active.product {
     }
 }
 
+.ToTop {
+    font-size: x-large;
+}
+
 @media screen and (max-width: 800px) {
     h1 {
         font-size: 5vw !important;
