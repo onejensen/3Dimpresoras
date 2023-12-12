@@ -116,7 +116,7 @@ img {
 #precio {
     font-family: 'white rabbit';
     font-size: xx-large;
-    cursor: pointer;
+    cursor: default;
 }
 
 .cj_btn {
@@ -302,7 +302,6 @@ a:active.product {
 
     .banner {
         width: 88%;
-        padding: auto;
     }
 
     .text {
@@ -316,7 +315,7 @@ a:active.product {
 
     .cajaproduct {
         display: inline-block ;
-        max-width: 500px;
+        max-width: 390px;
         border-radius: 10px;
         padding: 10px;
         margin-bottom: 20px;
@@ -338,6 +337,10 @@ a:active.product {
         border-radius: 10px;
         width: 80%;
         justify-items: center;
+    }
+
+    .imgg {
+        width: 100%;
     }
 
     .cj_btn {
@@ -379,7 +382,7 @@ a:active.product {
         max-width: 350px;
         border-radius: 10px;
         padding: 30px;
-      
+        margin-bottom: 20px;
       
         box-shadow: -3px 3px 4px #00000096;
 
