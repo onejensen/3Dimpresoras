@@ -382,9 +382,9 @@ a:active.product {
 
     .caja {
         
-        max-width: 350px;
+        max-width: 320px;
         border-radius: 10px;
-        padding: 30px;
+        padding: 15px;
         margin-bottom: 20px;
         box-shadow: -3px 3px 4px #00000096;
 
