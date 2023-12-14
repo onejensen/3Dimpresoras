@@ -365,7 +365,7 @@ a:active.product {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 4rem;
+        gap: 1rem;
         margin-bottom: 15px;
     }
 
