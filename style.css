@@ -45,7 +45,8 @@ body {
     padding: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
-    box-shadow: -3px 3px 4px #00000096;
+    background-color: #f5fdff;
+    box-shadow: -3px 3px 8px #00000096;
 
 }
 
@@ -92,7 +93,7 @@ img {
     margin-bottom: 0px;
     display: flex;
     border-radius: 10px;
-    width: 350px;
+    width: 340px;
     align-items: center;
 
 }
@@ -134,11 +135,22 @@ img {
 a {
     font-family: 'white rabbit';
     text-decoration: none;
+    color: #000000;
 }
 
 p, h1, h2, h3, h4, text, footer {
     text-decoration: none;
     cursor: default;
+}
+
+.icon {
+    max-width: 60px;
+    padding: 15px;
+    transition: all 0.25s linear 0s;
+
+    &:hover {
+        transform: scale(115%);
+    }
 }
 
 footer {
@@ -152,7 +164,7 @@ footer {
     width: 800px;
     top: 0;
     left: 0;
-    transition: all 0.15s linear 0s;
+    transition: all 0.25s linear 0s;
     position: relative;
     display: inline-block;
     padding: 15px 25px;
@@ -166,6 +178,7 @@ footer {
 
 
     &:hover {
+        transform: scale(101%);
         top: 0px;
         left: -0px;
         box-shadow: -8px 8px 6px #00000096;
@@ -194,18 +207,19 @@ a:active.banner {
 
 /*Final del efecto BANNER*/
 .btn {
-    width: 350px;
-    height: 350px;
-    transition: all 0.15s linear 0s;
+    width: 340px;
+    height: 340px;
+    transition: all 0.25s linear 0s;
     position: relative;
     display: flex;
     align-items: center;
-    padding: 10px 10px;
+    padding: 15px 15px;
     background-color: #FFE800;
     border-radius: 10px;
     box-shadow: -2px 2px 6px #000000;
 
     &:hover {
+        transform: scale(101%);
         top: 0px;
         left: -0px;
         box-shadow: -8px 8px 6px #00000096;
@@ -256,7 +270,7 @@ a:active.btn {
     margin-bottom: 15px;
     width: 300px;
     height: 33px;
-    transition: all 0.15s linear 0s;
+    transition: all 0.25s linear 0s;
     display: inline-block;
     padding: 5px 5px;
     background-color: #FFE800;
@@ -265,9 +279,10 @@ a:active.btn {
 
 
     &:hover {
+        transform: scale(101%);
         top: 0px;
         left: -0px;
-        box-shadow: -8px 8px 6px #00000096;
+        box-shadow: -8px 8px 8px #00000096;
     }
 }
 
@@ -323,13 +338,13 @@ a:active.product {
         padding: 10px;
         margin-bottom: 20px;
         margin-top: 20px;
-        box-shadow: -3px 3px 4px #00000096;
+        background-color: #f5fdff;
+        box-shadow: -3px 3px 8px #00000096;
     }   
 
     .btn {
-        width: 250px;
-        height: 250px;
         margin: auto;
+        
         }
 
     .image {
@@ -347,9 +362,11 @@ a:active.product {
     }
 
     .cj_btn {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
+        margin-bottom: 15px;
     }
 
     .cj_img {
@@ -359,7 +376,7 @@ a:active.product {
     }
 
     .link {
-        margin-top: 10px;
+        margin-top:10px;
         margin-bottom: 10px;
         display: flex;
         border-radius: 10px;
@@ -382,11 +399,12 @@ a:active.product {
 
     .caja {
         
-        max-width: 320px;
+        max-width: 380px;
         border-radius: 10px;
         padding: 15px;
         margin-bottom: 20px;
-        box-shadow: -3px 3px 4px #00000096;
+        box-shadow: -3px 3px 8px #00000096;
+        
 
     }
 
