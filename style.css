@@ -333,7 +333,7 @@ a:active.product {
 
     .cajaproduct {
         display: inline-block ;
-        max-width: 390px;
+        max-width: 350px;
         border-radius: 10px;
         padding: 10px;
         margin-bottom: 20px;
@@ -344,7 +344,9 @@ a:active.product {
 
     .btn {
         margin: auto;
-        
+        width: 80%;
+        height: 80%;
+        margin-top: 10px;
         }
 
     .image {
