@@ -190,9 +190,9 @@ a.banner {
 }
 
 a:active.banner {
-    top: 6px;
-    left: -6px;
-    box-shadow: none;
+    top: 0px;
+    left: -0px;
+    box-shadow: -1px 1px 1px;
 
     &:before {
         bottom: 1px;
@@ -209,7 +209,7 @@ a:active.banner {
 .btn {
     width: 340px;
     height: 340px;
-    transition: all 0.25s linear 0s;
+    transition: all 0.20s linear 0s;
     position: relative;
     display: flex;
     align-items: center;
@@ -251,9 +251,9 @@ a.btn {
 }
 
 a:active.btn {
-    top: 6px;
-    left: -6px;
-    box-shadow: none;
+    top: 0px;
+    left: -0px;
+    box-shadow: -1px 1px 1px;
 
     &:before {
         bottom: 1px;
@@ -270,7 +270,7 @@ a:active.btn {
     margin-bottom: 15px;
     width: 300px;
     height: 33px;
-    transition: all 0.25s linear 0s;
+    transition: all 0.20s linear 0s;
     display: inline-block;
     padding: 5px 5px;
     background-color: #FFE800;
@@ -291,9 +291,9 @@ a.product {
 }
 
 a:active.product {
-    top: 6px;
-    left: -6px;
-    box-shadow: none;
+    top: 0px;
+    left: -0px;
+    box-shadow: -1px 1px 1px;
 
     &:before {
         bottom: 1px;
